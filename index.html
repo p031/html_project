@@ -3,25 +3,21 @@
 
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-  <title>Jpark project</title>
-  <link href="style.css" rel="stylesheet" type="text/css" />
+  <title>To-do List</title>
+  <script>
+    window.onload = function() {
+      var txt = document.getElementById("input").value;
+      console.log(txt);
+    }
+  </script>
 </head>
 
 <body>
-  <div class="search-container">
-  <input class="search-bar" type="text" />
-  <div class="search-content"><span class="search">검색</span>
-    <i class="fas fa-search"></i>
-    <i class="fas fa-times-circle"></i>
-  </div>
-  <div class="suggestions-cap"></div>
-    <div class="suggestions-container">
-    <ul class="suggestions-list"></ul>
-    </div>
-</div>
-<p style="text-align:center">메일 카페 블로그 쇼핑 뉴스 증권 부동산 지도 웹툰 (더보기)</p>
+  <h2>오늘의 할일</h2>
+
+  <input type="text" id="input" value="할일">
+  <input type="button" id="button" value="저장">
+  <input type="button" id="del" value="전체삭제">
 
 </body>
-
 </html>
