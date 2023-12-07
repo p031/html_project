@@ -7,10 +7,11 @@
   <script>
     window.onload = function() {
       var txt = document.getElementById("input").value;
-      document.getElementById("button").onclick function () {
-        
-      }
-      
+      document.getElementById("button").onclick = function () {
+        var sv = document.getElementById("input").value;
+        var ot = document.getElementById("out");
+        ot.innerHTML = "- "+sv;
+      };
     }
   </script>
 </head>
@@ -21,6 +22,6 @@
   <input type="text" id="input">
   <input type="button" id="button" value="저장">
   <input type="button" id="del" value="전체삭제">
-
+  <p id="out"></p>
 </body>
 </html>
