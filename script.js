@@ -3,8 +3,11 @@ document.getElementById("button").onclick = function () {
   let sv = document.getElementById("input").value;
   let ot = document.getElementById("out");
   ot.innerHTML = '<input type=checkbox> '+sv;
-  var clean = document.getElementById("input")
-  clean.value = "";
+};
+
+document.getElementById("del").onclick = function () {
+    var clean = document.getElementById("out")
+    clean.value = "";
 };
 /*function enterkey() {
 if (window.event.keyCode == 13) {
